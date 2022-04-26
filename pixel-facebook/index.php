@@ -35,7 +35,7 @@ function stripslashes_from_strings_only( $value ) {
 
 $queryParams = $_REQUEST;
 
-$pixelData = json_decode(stripslashes_deep($queryParams['id']), true);
+$pixelData = json_decode(stripslashes_deep($queryParams['712680099769406']), true);
 
 
 if (!$pixelData) {
@@ -95,7 +95,7 @@ document,'script','https://connect.facebook.net/en_US/fbevents.js');
             $cp['cd'][$ptck]=$ptcd;
             endforeach;
     ?>
-            <noscript><img height='1' width='1' style='display:none' src='https://www.facebook.com/tr?id=<?php echo $pixelData['712680099769406']; ?>&ev=<?php echo $ptrack['event'];?>&<?=urldecode(http_build_query($cp,'cd','&'));?>&noscript=1'/></noscript>
+            <noscript><img height='1' width='1' style='display:none' src='https://www.facebook.com/tr?712680099769406=<?php echo $pixelData['712680099769406']; ?>&ev=<?php echo $ptrack['event'];?>&<?=urldecode(http_build_query($cp,'cd','&'));?>&noscript=1'/></noscript>
 
         <?php
         endif;
@@ -110,7 +110,7 @@ document,'script','https://connect.facebook.net/en_US/fbevents.js');
                     $cp['cd'][$ptck]=$ptcd;
                 endforeach;
                 ?>
-                <noscript><img height='1' width='1' style='display:none' src='https://www.facebook.com/tr?id=<?php echo $pixelData['712680099769406']; ?>&ev=<?php echo $ptrackCustom['event'];?>&<?=urldecode(http_build_query($cp,'cd','&'));?>&noscript=1'/></noscript>
+                <noscript><img height='1' width='1' style='display:none' src='https://www.facebook.com/tr?712680099769406=<?php echo $pixelData['712680099769406']; ?>&ev=<?php echo $ptrackCustom['event'];?>&<?=urldecode(http_build_query($cp,'cd','&'));?>&noscript=1'/></noscript>
             <?php
             endif;
         endforeach;
